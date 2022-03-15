@@ -37,9 +37,7 @@ class App extends Component {
   }
 
   checkDuplicateContact = checkName => {
-    const { contacts } = this.state;
-    const definedNames = contacts.map(contact => contact.name);
-    return definedNames.includes(checkName);
+    return this.state.contacts.find(contact => contact.name === checkName);
   };
 
   addContact = ({ name, tel }) => {
