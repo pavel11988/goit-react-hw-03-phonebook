@@ -1,11 +1,5 @@
 import styled from '@emotion/styled';
 
-export const List = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-`;
 export const ContactContainer = styled.li`
   width: 300px;
   border: 1px solid blue;
